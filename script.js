@@ -805,5 +805,27 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('resize', () => {
     if (window.innerWidth > 768 && sidebar.classList.contains('open')) {
         closeSidebarFn();
-    }
+   <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCeejow80x0vCcZIkA7Ed4wti27qW6pukQ",
+    authDomain: "anonsen-fed8a.firebaseapp.com",
+    projectId: "anonsen-fed8a",
+    storageBucket: "anonsen-fed8a.firebasestorage.app",
+    messagingSenderId: "332719815032",
+    appId: "1:332719815032:web:56ab3cb7d7683071f4708d",
+    measurementId: "G-J58R6NTN9T"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script> }
 });
